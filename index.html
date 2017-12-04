@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> </title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script> </script>
+</head>
+<body>
+</body>
+	<!-- Title of the game -->
+	<div class="container">
+		<h2 class="text-center">
+		Witaj w grze!
+		</h2>
+		<p>
+		<span class="label label-default">Kamień</span>
+		<span class="label label-info">Papier</span>
+		<span class="label label-danger">Nożyce</span>
+	</div>
+
+	<!-- Starting the game -->
+
+	<div id="js-newGameElement" class="container">
+		<div class="row text-center">
+			<button id="js-newGameButton" class="btn btn-default">
+				Nowa gra
+			</button>
+		</div>
+	</div>
+
+	<!-- Player picks -->
+
+	<div id="js-playerPickElement" class="container">
+  		<div class="row text-center">
+    		<button id="js-playerPick_rock" class="btn">
+      			<span class="badge">
+       				<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+      			</span>
+      			Kamień
+    		</button>
+    		<button id="js-playerPick_paper"  class="btn">
+      			<span class="badge">
+      				<i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+      			</span>
+      			Papier
+    		</button>
+    		<button id="js-playerPick_scissors"  class="btn">
+      			<span class="badge">
+      				<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+      			</span>
+      			Nożyce
+    		</button>
+  		</div>
+	</div>
+
+	<!-- Table of scores -->
+
+	<div id="js-resultsTableElement" class="container">
+  		<div class="row">
+    		<div class="col-xs-5 text-center">
+	      		<span id="js-playerPoints" class="badge">
+	      		0
+	      		</span>
+	      		<span id="js-playerName">
+	      		Imię Gracza
+	      		</span>
+    		</div>
+    		<div class="col-xs-2 text-center">
+      			VS.
+    		</div>
+		    <div class="col-xs-5 text-center">
+		    	<span id="js-computerPoints" class="badge">
+		    	0
+		    	</span>
+		    	Komputer
+		    </div>
+  		</div>
+	 	<div class="row">
+		    <div class="col-xs-5 text-center">
+		    	<span id="js-playerPick">
+		    	Wybór Gracza
+		    	</span>
+		    </div>
+	    	<div class="col-xs-2"></div>
+		    <div class="col-xs-5 text-center">
+		    	<span id="js-computerPick">
+		    	Wybór Komputera
+		    	</span>
+		    </div>
+		</div>
+	  	<div class="row">
+	    	<div class="col-xs-5 text-center">
+	    		<span id="js-playerResult">
+	        	Wynik Gracza
+	    		</span>
+	    	</div>
+	    	<div class="col-xs-2"></div>
+	    	<div class="col-xs-5 text-center">
+	      		<span id="js-computerResult">
+	        	Wynik Komputera
+	      		</span>
+	    	</div>
+	  	</div>
+	</div>
+
+<footer>
+	<div class="container-fluid text-center">
+		<p>Designed by Dawid Brzozowski 2017</p>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
